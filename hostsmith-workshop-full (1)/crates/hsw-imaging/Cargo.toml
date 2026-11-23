@@ -1,0 +1,15 @@
+[package]
+name = "hsw-imaging"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "HostSmith Workshop image operations: resize, crop, rotate, convert, lossless optimization"
+
+[dependencies]
+image = { workspace = true }
+oxipng = { workspace = true }
+thiserror = { workspace = true }
+serde = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }

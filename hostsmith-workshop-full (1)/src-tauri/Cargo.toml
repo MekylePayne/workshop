@@ -1,0 +1,27 @@
+[package]
+name = "hostsmith-workshop"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "HostSmith Workshop desktop shell (Tauri 2 thin adapter)"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+serde = { workspace = true }
+serde_json = { workspace = true }
+base64 = { workspace = true }
+tokio = { workspace = true }
+hsw-core = { path = "../crates/hsw-core" }
+hsw-edit = { path = "../crates/hsw-edit" }
+hsw-server = { path = "../crates/hsw-server" }
+hsw-imaging = { path = "../crates/hsw-imaging" }
+hsw-html = { path = "../crates/hsw-html" }
+hsw-seo = { path = "../crates/hsw-seo" }
+hsw-favicon = { path = "../crates/hsw-favicon" }
+hsw-validators = { path = "../crates/hsw-validators" }
+hsw-tools = { path = "../crates/hsw-tools" }
+hsw-cloudflare = { path = "../crates/hsw-cloudflare" }

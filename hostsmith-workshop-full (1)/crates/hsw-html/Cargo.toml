@@ -1,0 +1,13 @@
+[package]
+name = "hsw-html"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "HostSmith Workshop HTML analysis queries for SEO, favicon and validators"
+
+[dependencies]
+scraper = { workspace = true }
+serde = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }

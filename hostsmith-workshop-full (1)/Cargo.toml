@@ -1,0 +1,43 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/hsw-core",
+    "crates/hsw-edit",
+    "crates/hsw-server",
+    "crates/hsw-imaging",
+    "crates/hsw-html",
+    "crates/hsw-seo",
+    "crates/hsw-favicon",
+    "crates/hsw-validators",
+    "crates/hsw-tools",
+    "crates/hsw-cloudflare",
+]
+
+[workspace.dependencies]
+hsw-core = { path = "crates/hsw-core" }
+hsw-edit = { path = "crates/hsw-edit" }
+hsw-html = { path = "crates/hsw-html" }
+thiserror = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tempfile = "3"
+zip = { version = "2", default-features = false, features = ["deflate"] }
+lol_html = "2"
+similar = "2"
+notify = "7"
+tiny_http = "0.12"
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "gif", "webp", "ico", "bmp"] }
+oxipng = "9"
+scraper = "0.24"
+minify-html = "0.16"
+minify-js = "0.6"
+qrcode = "0.14"
+reqwest = { version = "0.12", default-features = false, features = ["json", "multipart", "rustls-tls"] }
+tokio = { version = "1", features = ["rt", "macros", "sync"] }
+url = "2"
+base64 = "0.22"
+blake3 = "1"
+
+[profile.release]
+lto = true
+codegen-units = 1
