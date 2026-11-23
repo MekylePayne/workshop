@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-# Favicon and images must never be accidentally blocked (spec Section 9).
-Disallow:
